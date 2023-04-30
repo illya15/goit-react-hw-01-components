@@ -1,10 +1,10 @@
 
-import {FriendListItem} from './FriendListItem/FriendListItem'
+import { FriendListItem } from './FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
-      {friends.map(({id,avatar,name,isOnline}) => (
+      {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
           key={id}
           avatar={avatar}
